@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for completing this survey!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name: 
+          <input required id="name" type="text" name="name" placeholder="please enter your name">
+        </label>
+        <label for="email" id="email-label">Email: 
+          <input required id="email" type="email" name="email" placeholder="please enter your email">
+        </label>
+        <label for="Age (optional)" id="number-label">Age: 
+          <input id="number" type="number" name="age" min="12" max="120" placeholder="age">
+        </label>
+      </fieldset>
+      <fieldset>
+  <label for="dropdown">Are you currently a student?</label>
+  <select id="dropdown" name="student">
+    <option value="">(select one)</option>
+    <option value="yes">yes</option>
+    <option value="no">no</option>
+  </select>
+</fieldset>
+      <fieldset>
+        <label>How many hours a night do you sleep on average?</label>
+        <label for="2 or less"><input id="2 or less" type="radio" value="2 or less" name="sleep-hours" class="inline" /> 2 or less</label>
+        <label for="3-5"><input id="3-5" type="radio" name="sleep-hours" value="3-5" class="inline" /> 3-5</label>
+        <label for="6-8"><input id="6-8" type="radio" name="sleep-hours" value="6-8" class="inline" /> 6-8</label>
+        <label for="more than 8"><input id="more than 8" type="radio" name="sleep-hours" value="more than 8" class="inline" /> more than 8</label>
+      </fieldset>
+      <fieldset>
+        <label for="symptoms">Select any of the following symptoms that you experience regularly:
+        </label>
+        <label>
+          <input id="lack of motivation" type="checkbox" name="symptoms" value="lack/loss of motivation"/> lack/loss of motivation
+        </label>
+        <label>
+          <input id="diffculty focusing" type="checkbox" name="symptoms" value="difficulty focusing" /> difficulty focusing
+        </label>
+        <label>
+          <input id="drowsiness" type="checkbox" name="symptoms" value="drowsiness"/> drowsiness
+        </label>
+        <label>
+          <input id="short attention span" type="checkbox" name="symptoms" value="short attention span"/>
+        short attention span </label>
+        <label>
+          <input id="memory loss/forgetfulnes" type="checkbox" required name="symptoms" value="memory loss/forgetfulness" /> memory loss/forgetfulness
+        </label>
+        <label>
+          <input id="slowed thinking" type="checkbox" required name="symptoms" value="slowed thinking" /> slowed thinking
+        </label>
+        <label>
+          <input id="lack of energy" type="checkbox" required name="symptoms" value="lack of energy" /> lack of energy
+        </label>
+        <label>
+          <input id="mood changes" type="checkbox" required name="symptoms" value="mood changes" /> mood changes
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="describe">You may describe any other symptoms or struggles that you encounter as a student here:
+          <textarea id="describe" name="describe" rows="3" cols="30" placeholder="I also struggle with..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="submit" />
+    </form>
+  </body>
+</html>
